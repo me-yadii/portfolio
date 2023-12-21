@@ -63,6 +63,12 @@ h2::before {
   color: var(--theme-color-2);
 }
 
+.seotext_01{
+  border-bottom: dotted;
+  border-color: #FFd700;
+  border-width: 5px;
+}
+
 img {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 20px;
@@ -109,7 +115,7 @@ ul li::before {
   position: absolute;
   left: 0.5em;
   top: 0.4em;
-  font-size: 75%;
+  font-size: 90%;
   font-family: "Font Awesome 6 Free";
   font-weight: bold;
   content: "\f02c";
