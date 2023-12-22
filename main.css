@@ -22,27 +22,58 @@ h1 {
   text-align: center;
   font-size: 280%;
   padding: 0.2em 0.5em;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.3em;
   text-shadow: #fff 2px 0, #fff -2px 0, #fff 0 -2px, #fff 0 2px, #fff 2px 2px,
     #fff -2px 2px, #fff 2px -2px, #fff -2px -2px, #fff 1px 2px, #fff -1px 2px,
     #fff 1px -2px, #fff -1px -2px, #fff 2px 1px, #fff -2px 1px, #fff 2px -1px,
-    #fff -2px -1px, rgba(0, 0, 0, 0.5) 3px 3px 3px;
+    #fff -2px -1px, rgba(0, 0, 0, 0.5) 5px 5px 5px;
   background: var(--theme-color-2);
   box-shadow: 0px 0px 0px 5px var(--theme-color-2);
   border: dashed 2px white;
 }
 
-h1::after {
-  position: absolute;
-  content: "";
-  left: -7.5px;
-  top: -7.5px;
-  border-width: 0 0 1em 1em;
-  border-style: solid;
-  border-color: #fff #fff var(--theme-color-2);
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+.heading-034 {
+    position: relative;
+    margin: 0 0 25px 9px;
+    padding: .5em .8em;
+    background-color: #FFd700;
+    color: #5f2103;
+    width: 50%;
+    margin: auto;
 }
 
+.heading-034::before {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    z-index: 1;
+    width: 7px;
+    height: 150%;
+    border-radius: 3px;
+    background-color: #9b4317;
+    content: '';
+}
+
+.heading-034 span::before,
+.heading-034 span::after {
+    position: absolute;
+    left: -9px;
+    width: 20px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #c99;
+    content: '';
+}
+
+.heading-034 span::before {
+    top: 44%;
+    transform: rotate(-25deg);
+}
+
+.heading-034 span::after {
+    top: 54%;
+    transform: rotate(25deg);
+}
 h2 {
   position: relative;
   font-size: 200%;
@@ -120,3 +151,4 @@ ul li::before {
   font-weight: bold;
   content: "\f02c";
 }
+
